@@ -12,6 +12,8 @@ done
 
 rm LimelightHelpers.java
 
+## todo cpp
+
 echo "LimelightHelpers.java has been copied to the target directories."
 
 sleep 5
