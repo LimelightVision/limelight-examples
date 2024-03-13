@@ -1,4 +1,4 @@
-//LimelightHelpers v1.3.0 (Feb 24, 2024)
+//LimelightHelpers v1.3.1 (March 4, 2024)
 
 package frc.robot;
 
@@ -604,8 +604,8 @@ public class LimelightHelpers {
         return getLimelightNTDouble(limelightName, "tid");
     }
 
-    public static double getNeuralClassID(String limelightName) {
-        return getLimelightNTDouble(limelightName, "tclass");
+    public static String getNeuralClassID(String limelightName) {
+        return getLimelightNTString(limelightName, "tclass");
     }
 
     /////
@@ -722,6 +722,11 @@ public class LimelightHelpers {
 
     public static void setPipelineIndex(String limelightName, int pipelineIndex) {
         setLimelightNTDouble(limelightName, "pipeline", pipelineIndex);
+    }
+
+    
+    public static void setPriorityTagID(String limelightName, int ID) {
+        setLimelightNTDouble(limelightName, "priorityid", ID);
     }
 
     /**
